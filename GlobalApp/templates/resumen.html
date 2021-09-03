@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Resumen</title>
+    </head>
+    <body>
+        <h4>Empresas</h4>
+        {% for empresa in empresas %}
+            <div style="width: 10%;">{{empresa.nombre}}</div>
+        {% endfor %}
+        <p></p>
+        <h4>Empresa con mas ventas</h4>
+            
+            {% for empresaMayor in empresaMayorVentas%}
+            <div style="width: 50%;">Empresa: {{empresaMayor.empresa}} -
+                    Transaccion: {{empresaMayor.id}} - 
+                    Suma de precio: {{empresaMayor.total}}
+            </div>
+            {% endfor %}
+                
+
+
+        <h4>Empresas con menos ventas </h4>
+                <!--{% for empresaMayor in empresasMayor%}
+                    <div style="width: 50%;">Transaccion: {{empresaMayor.id}} - Suma de precio: {{empresaMayor.cantidad}} Precio: {{empresaMayor.price}}</div>
+                {% endfor %}-->
+        <h4>Precio total de transacciones que SI se cobraron </h4>
+
+        <h4>Precio total de transacciones que NO se cobraron </h4>
+            
+        <h4> Empresa con más rechazos de ventas (es decir, no se cobraron)</h4>
+            
+        
+    </body>
+
+</html>
