@@ -1,1 +1,0 @@
-﻿# DJango rest framework.
